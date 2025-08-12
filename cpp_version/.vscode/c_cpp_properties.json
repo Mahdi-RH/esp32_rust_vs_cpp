@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/esp/esp-idf/components/**", // Adjust if your ESP-IDF is installed elsewhere
+                "C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/**",
+                "C:/esp/esp-idf/components/esp_system/include/**"
+            ],
+            "defines": [
+                "__ets__",
+                "IDF_VER=\"5.0.0\"" // Adjust to your ESP-IDF version
+            ],
+            "compilerPath": "C:/Users/SAZGAR/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe", // Adjust if needed
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x86"
+        }
+    ],
+    "version": 4
+}
