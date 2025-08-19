@@ -1,33 +1,31 @@
-# ESP32 Concurrency & Memory Safety: C++ vs Rust
+#  Concurrency & Memory Safety: C++ vs Rust
 
-This repository contains two ESP32 projects that demonstrate concurrency and memory safety concepts:
-- **`cpp_version/`** — ESP-IDF C++ project with race conditions, deadlocks, and unsafe memory examples.
-- **`rust_version/`** — ESP-IDF Rust project showing safe concurrency and memory safety guarantees.
+This repository contains two directoris that demonstrate concurrency and memory safety concepts:
+- **`cpp_version/`** — C++ prototypes with race conditions, deadlocks, and unsafe memory examples.
+- **`rust_version/`** —  Rust prototypes showing safe concurrency and memory safety guarantees.
 
 ---
+Setup Instructions
+To run these examples on your ESP32 hardware:
 
-## 1. Prerequisites
+For the C++ Version (cpp_version/)
+Follow the official ESP-IDF setup guide:
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/
 
-- **ESP-IDF** (for C++ project): [Install ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html)
-- **Rust toolchain** (for Rust project): [Install Rust](https://www.rust-lang.org/tools/install)
-- **esp-idf tools for Rust**:  
-  ```bash
-  cargo install espup
-  espup install
-> USB cable & supported ESP32 development board.
+For the Rust Version (rust_version/)
+Follow the ESP-RS framework setup guide:
+https://docs.espressif.com/projects/rust/book/introduction.html
 
-> esp32_rust_vs_cpp/
-│
-├── cpp_version/
-│   ├── concurrency/
-│   ├── memory_safety/
-│   ├── main/
-│   ├── CMakeLists.txt
-│   └── README.md
-│
-├── rust_version/
-│   ├── src/
-│   ├── Cargo.toml
-│   └── README.md
-│
-└── README.md
+Comparison Focus
+Memory Safety: Rust's compile-time guarantees vs C++ manual memory management
+
+Concurrency: Safe sharing patterns in Rust vs potential race conditions in C++
+
+Build Systems: Cargo vs ESP-IDF build system
+
+Requirements
+ESP32 development board (ESP32, ESP32-S2, ESP32-S3, etc.)
+
+USB cable for programming 
+
+Platform-specific tools (Rust toolchain or ESP-IDF setup)
