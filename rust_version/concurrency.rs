@@ -69,3 +69,7 @@ pub fn demo_deadlock() {
     t1.join().unwrap();
     t2.join().unwrap();
 }
+
+fn main() {
+   demo_thread_safe();
+}
