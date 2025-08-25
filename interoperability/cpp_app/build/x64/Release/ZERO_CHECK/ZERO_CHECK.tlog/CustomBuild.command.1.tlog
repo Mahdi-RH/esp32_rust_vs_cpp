@@ -1,0 +1,10 @@
+^D:\PROJECTS\ALTEN\ESP32_RUST_VS_CPP\INTEROPERABILITY\CPP_APP\BUILD\CMAKEFILES\18AE2BDD1BF68DBF8145534CDAB7C0D0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/projects/alten/esp32_rust_vs_cpp/interoperability/cpp_app -BD:/projects/alten/esp32_rust_vs_cpp/interoperability/cpp_app/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/projects/alten/esp32_rust_vs_cpp/interoperability/cpp_app/build/cpp_app.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

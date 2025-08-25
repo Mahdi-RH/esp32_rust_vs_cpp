@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/projects/alten/esp32_rust_vs_cpp/interoperability/cpp_app/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
