@@ -1,7 +1,8 @@
 #  Concurrency & Memory Safety: C++ vs Rust
 
-This repository contains two directoris that demonstrate concurrency and memory safety concepts:
+This repository contains three directoris that demonstrate concurrency and memory safety concepts:
 - **`cpp_version/`** — C++ prototypes with race conditions, deadlocks, and unsafe memory examples.
+- **`interoperability/`** — focus on interoperability between Rust and C++ (SLL).
 - **`rust_version/`** —  Rust prototypes showing safe concurrency and memory safety guarantees.
 
 ---
